@@ -19,11 +19,11 @@ public class f23_pattern {
         //        System.out.print(" ");
         //    }
             int spc=2*(n-i);
-            while(spc>=1){
+            while(spc>=1) {
                 System.out.print(" ");
                 spc--;
             }
-            spc=spc-2;
+            //   spc=spc-2;
             for(int j=1;j<=i;j++){
                 System.out.print("*");
             }
@@ -43,7 +43,7 @@ public class f23_pattern {
                 System.out.print(" ");
                 spc--;
             }
-            spc=spc-2;
+         //   spc=spc-2;
             for(int j=1;j<=i;j++){
                 System.out.print("*");
             }

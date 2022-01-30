@@ -20,7 +20,7 @@ public class f25_pattern {
                     System.out.print(" ");
                 }
             }
-            System.out.println();
+         // System.out.println(); wrong
             int spaces = 2 * (n-i);
             for(int j=1; j<=spaces; j++) {
                     System.out.print(" ");
@@ -32,6 +32,30 @@ public class f25_pattern {
                     System.out.print(" ");
                 }
             }
+            System.out.println();
+        }
+        //lower half
+        for(int i=n;i>=1;i--){
+            for(int j=1;j<=i;j++){
+                if(i==1||j==1||j==i){
+                    System.out.print("*");
+                }else{
+                    System.out.print(" ");
+                }
+            }
+            // System.out.println(); wrong
+            int spaces = 2 * (n-i);
+            for(int j=1; j<=spaces; j++) {
+                System.out.print(" ");
+            }
+            for(int j=1;j<=i;j++){
+                if(i==1||j==1||j==i){
+                    System.out.print("*");
+                }else{
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
         }
     }
 }
